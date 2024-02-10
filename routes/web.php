@@ -13,6 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+// routes/web.php
+
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PortfolioController;
+use App\Http\Controllers\AirsoftBlogController;
+
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/portfolio', [PortfolioController::class, 'index'])->name('portfolio');
+Route::get('/airsoft-blog', [AirsoftBlogController::class, 'index'])->name('airsoft.blog');
