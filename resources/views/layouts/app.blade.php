@@ -4,11 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
     <!-- Include CSS and JS assets here -->
 </head>
 <body>
-    <header>
+    <header class="main-header">
         <!-- Header content -->
     </header>
 
@@ -16,7 +19,7 @@
         @yield('content')
     </main>
 
-    <footer>
+    <footer class="main-footer">
         <!-- Footer content -->
     </footer>
 </body>
